@@ -1,0 +1,32 @@
+// ==UserScript==
+// @name          Readeck archived deleter
+// @namespace     https://readeck.org
+// @@homepageURL  https://github.com/m3rone/readeck-achive-deleter-userscript
+// @icon          data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiPgo8cGF0aCBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9InJnYigyLjM1Mjk0MSUsIDI5LjgwMzkyMiUsIDM2LjA3ODQzMSUpIiBmaWxsLW9wYWNpdHk9IjEiIGQ9Ik0gODkuMTQ4NDM4IDAuMDI3MzQzOCBMIDQyMi44NjMyODEgMC4wMjczNDM4IEMgNDcyLjA5Mzc1IDAuMDI3MzQzOCA1MTIuMDAzOTA2IDM5LjkzNzUgNTEyLjAwMzkwNiA4OS4xNjc5NjkgTCA1MTIuMDAzOTA2IDQyMi44ODI4MTIgQyA1MTIuMDAzOTA2IDQ3Mi4xMTMyODEgNDcyLjA5Mzc1IDUxMi4wMTk1MzEgNDIyLjg2MzI4MSA1MTIuMDE5NTMxIEwgODkuMTQ4NDM4IDUxMi4wMTk1MzEgQyAzOS45MjE4NzUgNTEyLjAxOTUzMSAwLjAxMTcxODggNDcyLjExMzI4MSAwLjAxMTcxODggNDIyLjg4MjgxMiBMIDAuMDExNzE4OCA4OS4xNjc5NjkgQyAwLjAxMTcxODggMzkuOTM3NSAzOS45MjE4NzUgMC4wMjczNDM4IDg5LjE0ODQzOCAwLjAyNzM0MzggWiBNIDg5LjE0ODQzOCAwLjAyNzM0MzggIi8+CjxwYXRoIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0icmdiKDk4LjQzMTM3MyUsIDgwLjc4NDMxNCUsIDMzLjMzMzMzMyUpIiBmaWxsLW9wYWNpdHk9IjEiIGQ9Ik0gMzczLjA4OTg0NCAxNzAuNzE4NzUgTCAyMDYuNzM0Mzc1IDI0OC4yOTY4NzUgTCAyMDYuNzM0Mzc1IDM2Ny40NTcwMzEgTCA0MTguNzMwNDY5IDI2OC42MDE1NjIgWiBNIDM3My4wODk4NDQgMTcwLjcxODc1ICIvPgo8cGF0aCBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9InJnYigyNy40NTA5OCUsIDczLjMzMzMzMyUsIDgzLjkyMTU2OSUpIiBmaWxsLW9wYWNpdHk9IjEiIGQ9Ik0gMjA2LjczNDM3NSAyNTAuNzkyOTY5IEwgMjA2LjczNDM3NSAzNjkuOTY0ODQ0IEwgMzgzLjIwMzEyNSA0NTIuMjUgTCAzNzIuNjI1IDM4Ny43MjY1NjIgTCA0MjguODM5ODQ0IDM1NC4zNzEwOTQgWiBNIDIwNi43MzQzNzUgMjUwLjc5Mjk2OSAiLz4KPHBhdGggZmlsbC1ydWxlPSJub256ZXJvIiBmaWxsPSJyZ2IoMTAwJSwgOTguMDM5MjE2JSwgOTMuNzI1NDklKSIgZmlsbC1vcGFjaXR5PSIxIiBkPSJNIDk4LjczNDM3NSAxMTkuMzgyODEyIEwgMjA2LjczNDM3NSAxMTkuMzgyODEyIEwgMjA2LjczNDM3NSA0MzkuMzc4OTA2IEwgOTguNzM0Mzc1IDQzOS4zNzg5MDYgWiBNIDk4LjczNDM3NSAxMTkuMzgyODEyICIvPgo8cGF0aCBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9InJnYigwJSwgMCUsIDAlKSIgZmlsbC1vcGFjaXR5PSIwLjMxMzcyNSIgZD0iTSA5OC43MzQzNzUgMTE5LjM3ODkwNiBMIDk4LjczNDM3NSAxMjYuMjc3MzQ0IEwgNDExLjMyODEyNSAyNzIuMDUwNzgxIEwgNDE4LjczNDM3NSAyNjguNTk3NjU2IFogTSA5OC43MzQzNzUgMTE5LjM3ODkwNiAiLz4KPHBhdGggZmlsbC1ydWxlPSJub256ZXJvIiBmaWxsPSJyZ2IoMjcuNDUwOTglLCA3My4zMzMzMzMlLCA4My45MjE1NjklKSIgZmlsbC1vcGFjaXR5PSIxIiBkPSJNIDIwNi43MzQzNzUgNTkuODAwNzgxIEwgOTguNzM0Mzc1IDExOS4zODI4MTIgTCA0MTguNzMwNDY5IDI2OC42MDE1NjIgTCA0MTguNzMwNDY5IDE0OS40Mzc1IFogTSAyMDYuNzM0Mzc1IDU5LjgwMDc4MSAiLz4KPC9zdmc+Cg==
+// @updateURL     https://raw.githubusercontent.com/m3rone/readeck-achive-deleter-userscript/refs/heads/main/readeckdel.user.js
+// @version       1.0.0
+//
+// @match         https://YOUR_READECK_INSTANCE/bookmarks/archives*
+// @grant         none
+//
+// @author        m3r
+// @description   A button for deleting all archived articles in Readeck
+// ==/UserScript==
+
+let div = document.getElementsByClassName("bookmark-list")[0]
+let delbtn = document.createElement("button")
+let itemlist = document.getElementsByClassName("bookmark-list--grid")[0]
+
+delbtn.textContent = "Delete All"
+delbtn.className = "btn btn-danger block mx-auto"
+
+delbtn.addEventListener("click", () => {
+  Array.from(
+    document.getElementsByName('is_deleted')).forEach(
+      (btn) => btn.click()
+    )
+})
+
+if (itemlist.childElementCount > 0 ) {
+  div.appendChild(delbtn)
+}
